@@ -1,0 +1,9 @@
+dn: cn=loco2,ou=productes,dc=edt,dc=org
+objectClass: xfutbolista
+cn: loco gati2
+sn: logati
+xequip: lotreball
+xdorsal: 69
+xweb: www.loco.com
+xfoto: ///opt/docker/myphoto.jpg
+xlesionat: FALSE
