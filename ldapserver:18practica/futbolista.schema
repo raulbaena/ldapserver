@@ -1,37 +1,37 @@
-# schema futbolista:
-#            equip, dorsal, web, foto, lesionat
+# schema alumne:
+#            xnom, xtext,xweb,xfoto,xenter
 # @edt ASIX-M06 2018-2019
 
-attributetype (1.1.2.1.1 NAME 'xequip'
+attributetype (1.1.2.1.1 NAME ('xnom','lonom')
   EQUALITY caseIgnoreMatch
   SUBSTR caseIgnoreSubstringsMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
   SINGLE-VALUE )
 
-attributetype (1.1.2.1.2 NAME 'xdorsal'
+attributetype (1.1.2.1.2 NAME 'xenter'
   SYNTAX  1.3.6.1.4.1.1466.115.121.1.27
   SINGLE-VALUE)
 
-attributetype (1.1.2.1.3 NAME 'xweb'
-  DESC 'web del futbolista'
+attributetype (1.1.2.1.3 NAME 'xtext'
+  DESC 'text alumne'
   EQUALITY caseExactMatch
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.15)
 
 attributetype (1.1.2.1.4 NAME 'xfoto'
-  DESC 'foto del fumbolista'
+  DESC 'foto del alumne'
   SYNTAX 1.3.6.1.4.1.1466.115.121.1.40)
 
-attributetype (1.1.2.1.5 NAME 'xlesionat'
-  DESC 'lesionat TRUE'
+attributetype (1.1.2.1.5 NAME 'xinscrit'
+  DESC 'Inscrit al curs'
   SYNTAX  1.3.6.1.4.1.1466.115.121.1.7 
   SINGLE-VALUE)
 
-objectclass (1.1.2.2.1 NAME 'xfutbolista'
-  DESC 'fumbuleros'
-  SUP inetOrgPerson
-  STRUCTURAL
-  MUST xequip
-  MAY ( xdorsal $ xweb $ xfoto $ xlesionat) )
+objectclass (1.1.2.2.1 NAME 'xalumne'
+  DESC 'Alumnes'
+  SUP TOP
+  AUXILIARY
+  MUST xnom
+  MAY ( xenter $ xtext $ xfoto $ xinscrit) )
 
 
 

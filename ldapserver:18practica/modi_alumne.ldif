@@ -1,0 +1,44 @@
+dn: uid=111,ou=Productes,dc=edt,dc=org
+objectclass: xalumne
+objectclass: inetOrgPerson
+cn: vladimir remar
+cn: VLaD ThE IMPaLer
+sn: vladi
+xnom: Vladimir putin
+xenter: 7
+xtext: www.vladimir.remar
+xfoto: ///opt/docker/myphoto.jpg
+xinscrit: TRUE
+homephone: 555-212-2220
+mail: vladimir.remar@gmail.com
+
+dn: uid=222,ou=Productes,dc=edt,dc=org
+objectclass: xalumne
+objectclass: inetOrgPerson
+cn: Anna Pou
+cn: Anita Pou
+sn: Pou
+homephone: 555-222-2222
+mail: anna@edt.org
+xnom: Anna Annita
+xenter: 8
+xtext: www.anna.com
+xfoto: ///opt/docker/myphoto.jpg
+xinscrit: TRUE
+
+dn: cn=333,ou=Productes,dc=edt,dc=org
+objectclass: xalumne
+objectclass: inetOrgPerson
+cn: user10
+cn: alumne10 de 2asix de todos los santos
+sn: alumne10
+homephone: 555-222-0016
+mail: user10@edt.org
+xnom: user10
+xenter: 9
+xtext: www.user.com
+xfoto: ///opt/docker/myphoto.jpg
+xinscrit: False
+
+
+
