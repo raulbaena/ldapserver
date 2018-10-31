@@ -1,0 +1,17 @@
+dn: uid=333,ou=Productes,dc=edt,dc=org
+objectclass: xalumne
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: user10
+cn: alumne10 de 2asix de todos los santos
+sn: alumne10
+homephone: 555-222-0016
+mail: user10@edt.org
+xnom: user10
+xcurs: 9
+xdescripcio: www.user.com
+xfoto: ///opt/docker/myphoto.jpg
+xinscrit: FALSE
+uidNumber: 222
+gidNumber: 202
+homeDirectory: /tmp/pere

@@ -1,0 +1,7 @@
+dn: cn=jorge mario bergoglio,o=noneu,o=europa,ou=clients,dc=edt,dc=org
+changetype: modify
+add: objectClass
+objectClass: xalumne
+-
+add: xnom
+xnom: jorgerio
