@@ -1,0 +1,35 @@
+# schema independentista:
+#            idcat, sardanes, foto, lema, twitter
+#isx53320159 M06-ASIX 2018-2019
+#Schema examen ldap (derivar de inetOrgPerson)
+#--------------------------------------------------------
+
+attributetype (1.1.2.1.1 NAME 'idcat'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE )
+
+attributetype (1.1.2.1.2 NAME 'sardana'
+  SYNTAX  1.3.6.1.4.1.1466.115.121.1.7
+  SINGLE-VALUE)
+
+attributetype (1.1.2.1.3 NAME 'foto'
+  DESC 'foto indepe'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40)
+
+
+attributetype (1.1.2.1.4 NAME 'lema'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15	
+  SINGLE-VALUE)
+
+attributetype (1.1.2.1.5 NAME 'twitter'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.26
+  SINGLE-VALUE)
+
+objectclass (1.1.2.2.1 NAME 'indepeOrgPerson'
+  DESC 'Indepes'
+  SUP inetOrgPerson
+  STRUCTURAL
+  MUST idcat
+  MAY ( sardana $ foto  $ lema $ twitter) )

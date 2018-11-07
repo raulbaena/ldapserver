@@ -1,0 +1,59 @@
+dn: dc=raul,dc=cat
+dc: raul
+description: Examen ldap
+objectClass: dcObject
+objectClass: organization
+o: raul.cat
+
+dn: ou=socis,dc=raul,dc=cat
+ou: socis
+description: Socis ldap 
+objectclass: organizationalunit
+
+dn: ou=simpatizants,dc=raul,dc=cat
+ou: simpatizants
+description: Simpatizants ldap 
+objectclass: organizationalunit
+
+dn: idcat=1111,ou=socis,dc=raul,dc=cat
+objectclass: indepeOrgPerson
+idcat: 1111
+sardana: FALSE
+foto: ///opt/anna.jpg
+lema: Somos los putos amos
+twitter: @annita
+cn: Anna Pou
+cn: Anna the indeper
+sn: Anni
+homephone: 111-111-111
+mail: anna@indepe.es
+
+dn: idcat=2222,ou=socis,dc=raul,dc=cat
+objectclass: indepeOrgPerson
+idcat: 2222
+sardana: TRUE
+foto: ///opt/pau.jpg
+lema: Lo puchi
+twitter: @Pauet
+cn: Pau Pou
+cn: Pau the Belgic
+sn: Pauet
+homephone: 222-222-222
+mail: pau@indepe.es
+
+dn: idcat=3333,ou=socis,dc=raul,dc=cat
+objectclass: indepeOrgPerson
+idcat: 3333
+sardana: TRUE
+foto: ///opt/sergi.jpg
+lema: Lo puchi2
+twitter: @Sergit
+cn: Sergi Munoz
+cn: Sergi the lover
+sn: Serget
+homephone: 333-333-333
+mail: sergi@indepe.es
+
+
+
+

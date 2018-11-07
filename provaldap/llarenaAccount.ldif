@@ -1,0 +1,28 @@
+dn: idcat=1111,ou=socis,dc=raul,dc=cat
+changetype: modify
+add: objectclass
+objectclass: llarenaAccount
+-
+add: delictes
+delictes: Defensar els teus drets y lluitar per la llibertat 
+-
+add: anyscomdena
+anyscomdena: 50
+-
+add: galeres
+galeres: FALSE
+
+dn: idcat=2222,ou=socis,dc=raul,dc=cat
+changetype: modify
+add: objectclass
+objectclass: llarenaAccount
+-
+add: delictes
+delictes: Lluitar contra el PP
+-
+add: anyscomdena
+anyscomdena: 50
+-
+add: galeres
+galeres: TRUE
+
